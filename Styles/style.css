@@ -122,6 +122,41 @@ header nav {
   margin-bottom: 10px;
 }
 
+/* Flower Lover Styles */
+.flower-lover {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 200px auto;
+}
+.flower-lover-text {
+}
+.flower-lover-text h1 {
+  color: rgb(0, 0, 0);
+  font-family: " Noto Serif, serif";
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.flower-lover-text ul {
+  padding: 30px;
+}
+.flower-lover-text ul li {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.33rem;
+  margin-bottom: 20px;
+}
+
+.badge {
+  position: absolute;
+  top: -140px;
+  right: -280px;
+}
+.badge img {
+  width: 30%;
+}
+
 /* RESPONSIVE CSS FOR MOBILE */
 @media screen and (max-width: 576px) {
   /* Header Styles Start */
@@ -176,5 +211,34 @@ header nav {
 
   .plants-card img {
     width: 100%;
+  }
+  /* Flower Lover Styles */
+  .flower-lover {
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px;
+  }
+  .flower-lover figure {
+    width: 100%;
+  }
+  .flower-lover figure img {
+    width: 100%;
+  }
+  .flower-lover-text {
+    width: 100%;
+  }
+  .flower-lover-text h1 {
+    font-size: 2.6rem;
+  }
+
+  .flower-lover-text ul li {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .badge {
+    position: fixed;
+    width: 10%;
+    visibility: hidden;
   }
 }
