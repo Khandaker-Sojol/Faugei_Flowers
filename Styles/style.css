@@ -140,14 +140,14 @@ header nav {
   margin-bottom: 10px;
 }
 
-/* Flower Lover */
+/* Flower Lover Section */
 .flower-lover {
   display: flex;
   gap: 100px;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin: 200px auto;
+  margin: 130px auto;
 }
 
 .flower-lover-text h1 {
@@ -167,6 +167,15 @@ header nav {
   margin-bottom: 20px;
 }
 
+/* For Badge spin */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .badge {
   position: absolute;
   top: -140px;
@@ -175,13 +184,14 @@ header nav {
 
 .badge img {
   width: 30%;
+  animation: spin 5s linear infinite;
 }
 
 /* Deals Section styles */
 
 .deals-section {
   max-width: 1100px;
-  margin: 40px auto;
+  margin-bottom: 60px;
   padding: 0 15px;
   text-align: center;
 }
@@ -197,11 +207,6 @@ header nav {
   padding-bottom: 30px;
 }
 
-.deals-section h2 span {
-  color: #ff5722;
-  font-weight: bold;
-}
-
 .deals-img-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -212,20 +217,6 @@ header nav {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-/* 🔥 Card common design */
-.img-design {
-  position: relative;
-
-  height: 150px;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-}
-.deal-card.large {
-  height: 320px;
 }
 
 .left-img-1 {
@@ -473,6 +464,20 @@ header nav {
   .badge {
     display: none;
   }
+  /* Deals Section styles */
+
+  .deals-section {
+    padding: 30px;
+  }
+
+  .deals-img-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .right-img {
+    height: 200px;
+  }
   /* Colorful Branch Sec */
   .colorful-branch {
     margin: 30px;
@@ -511,8 +516,7 @@ header nav {
     width: 100%;
     padding-bottom: 20px;
   }
-  .footer-div-4 {
-  }
+
   .footer-div-4 figure {
     display: flex;
     gap: 30px;
