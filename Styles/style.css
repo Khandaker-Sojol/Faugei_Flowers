@@ -157,6 +157,44 @@ header nav {
   width: 30%;
 }
 
+/* Colorful Brach styles */
+.colorful-branch {
+  background-image: url("../images/news-letter-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branch-info {
+  padding: 15rem 0;
+  width: 50%;
+}
+
+.branch-info h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Noto Serif, serif";
+  font-size: 3.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+#input-parents {
+  display: flex;
+}
+.branch-info input {
+  padding: 16px 20px;
+  width: 80%;
+}
+.branch-info button {
+  width: 30%;
+  padding: 17px 0;
+  cursor: pointer;
+  margin-left: -1px;
+}
+
 /* RESPONSIVE CSS FOR MOBILE */
 @media screen and (max-width: 576px) {
   /* Header Styles Start */
@@ -235,10 +273,24 @@ header nav {
     font-size: 1rem;
     margin-bottom: 20px;
   }
-
   .badge {
     position: fixed;
-    width: 10%;
+    width: 0%;
     visibility: hidden;
+  }
+  /* Colorful Brach styles */
+  .colorful-branch {
+    margin: 30px;
+    max-width: 100%;
+  }
+
+  .branch-info {
+    padding: 100px 20px;
+    width: 100%;
+  }
+
+  .branch-info h1 {
+    font-size: 2rem;
+    width: 100%;
   }
 }
