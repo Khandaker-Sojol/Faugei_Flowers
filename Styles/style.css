@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Inter", sans-serif;
   max-width: 1440px;
@@ -25,6 +30,7 @@ body {
   border: none;
   padding: 16px 20px;
   width: 100%;
+  cursor: pointer;
 }
 
 .common-color {
@@ -37,17 +43,19 @@ p {
   font-weight: 400;
 }
 
-/* Header Styles Start */
+/* Header Styles */
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 30px 0;
 }
+
 .nav-items {
   display: flex;
   gap: 20px;
 }
+
 .nav-items h4 {
   color: rgb(0, 0, 0);
   cursor: pointer;
@@ -57,59 +65,68 @@ header nav {
   display: flex;
   gap: 20px;
 }
+
 .nav-items ul li {
   list-style: none;
 }
+
 .nav-items ul li a {
   text-decoration: none;
   color: rgb(137, 135, 161);
 }
+
 #special-nav-item {
   font-weight: bold;
   color: black;
 }
 
-/* Banner Styles */
+/* Banner */
 .banner {
   display: flex;
   align-items: end;
 }
+
 .banner-info {
   width: 50%;
 }
+
 .banner-info h1 {
   font-size: 4rem;
   font-weight: bold;
   font-family: "Noto Serif, serif";
 }
+
 .banner-img {
   width: 50%;
 }
+
 .banner-img img {
   width: 100%;
 }
 
-/* Plants Section Styles */
+/* Plants Section */
 .plants {
   margin: 50px auto;
 }
+
 .plants-info {
   text-align: center;
   padding: 60px 0;
 }
+
 .plants-info h1 {
   font-family: "Noto Serif , serif";
   font-size: 3rem;
   font-weight: 700;
   padding-bottom: 20px;
 }
+
 .plants-card-container {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
 }
-.plants-card {
-}
+
 .plants-card h3 {
   text-align: center;
   margin-top: 10px;
@@ -117,12 +134,13 @@ header nav {
   font-size: 1.33rem;
   font-weight: 600;
 }
+
 #price {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* Flower Lover Styles */
+/* Flower Lover */
 .flower-lover {
   display: flex;
   gap: 100px;
@@ -131,17 +149,18 @@ header nav {
   position: relative;
   margin: 200px auto;
 }
-.flower-lover-text {
-}
+
 .flower-lover-text h1 {
   color: rgb(0, 0, 0);
   font-family: " Noto Serif, serif";
   font-size: 3.2rem;
   font-weight: 700;
 }
+
 .flower-lover-text ul {
   padding: 30px;
 }
+
 .flower-lover-text ul li {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.33rem;
@@ -153,11 +172,12 @@ header nav {
   top: -140px;
   right: -280px;
 }
+
 .badge img {
   width: 30%;
 }
 
-/* Colorful Brach styles */
+/* Colorful Branch */
 .colorful-branch {
   background-image: url("../images/news-letter-bg.png");
   background-repeat: no-repeat;
@@ -181,67 +201,116 @@ header nav {
   width: 100%;
   text-align: center;
 }
+
 #input-parents {
   display: flex;
+  width: 100%;
 }
+
 .branch-info input {
   padding: 16px 20px;
-  width: 80%;
+  width: 70%;
+  box-sizing: border-box;
 }
+
 .branch-info button {
   width: 30%;
   padding: 17px 0;
   cursor: pointer;
-  margin-left: -1px;
+  margin-left: 0;
+  box-sizing: border-box;
+}
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
-/* RESPONSIVE CSS FOR MOBILE */
+.footer-div-1 {
+  width: 40%;
+}
+.footer-div-2 {
+}
+.footer-div-3 {
+}
+.footer-div-2 ul li,
+.footer-div-3 ul li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+.footer-div-2 ul li a,
+.footer-div-3 ul li a {
+  text-decoration: none;
+  color: rgb(107, 114, 128);
+}
+.footer-div-4 {
+}
+.footer-div-4 figure {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.footer-div-4 img {
+  width: 100%;
+}
+
+/* Mobile Responsive */
 @media screen and (max-width: 576px) {
-  /* Header Styles Start */
+  /* Header */
   header {
     padding: 30px;
   }
+
   header nav {
     margin: 0;
   }
+
   .nav-items ul {
     visibility: hidden;
   }
+
   .nav-items h4 {
     display: flex;
     gap: 10px;
     align-items: center;
     margin-left: -100px;
   }
-
-  /* Banner Styles */
+  /* Banner */
   .banner {
     flex-direction: column-reverse;
   }
+
   .banner-info {
     width: 100%;
   }
+
   .banner-info h1 {
     font-size: 2.6rem;
     margin: 20px 0;
   }
+
   .banner-info p {
     font-size: 1rem;
   }
+
   .banner-img {
     width: 100%;
   }
-  /* Plants Section Styles */
+  /* Plants Section */
   .plants {
     margin-top: -70px;
     padding: 30px;
   }
+
   .plants-info h1 {
     font-size: 3rem;
   }
+
   .plants-info p {
     font-size: 1rem;
   }
+
   .plants-card-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -250,21 +319,26 @@ header nav {
   .plants-card img {
     width: 100%;
   }
-  /* Flower Lover Styles */
+
+  /* Flower Lover Sec */
   .flower-lover {
     flex-direction: column;
     gap: 10px;
     margin: 30px;
   }
+
   .flower-lover figure {
     width: 100%;
   }
+
   .flower-lover figure img {
     width: 100%;
   }
+
   .flower-lover-text {
     width: 100%;
   }
+
   .flower-lover-text h1 {
     font-size: 2.6rem;
   }
@@ -273,12 +347,11 @@ header nav {
     font-size: 1rem;
     margin-bottom: 20px;
   }
+
   .badge {
-    position: fixed;
-    width: 0%;
-    visibility: hidden;
+    display: none;
   }
-  /* Colorful Brach styles */
+  /* Colorful Branch Sec */
   .colorful-branch {
     margin: 30px;
     max-width: 100%;
@@ -291,6 +364,39 @@ header nav {
 
   .branch-info h1 {
     font-size: 2rem;
+    width: 100%;
+  }
+
+  #input-parents {
+    display: flex;
+    width: 100%;
+  }
+
+  .branch-info input {
+    width: 70%;
+  }
+
+  .branch-info button {
+    width: 30%;
+  }
+  /* Footer styles */
+  .footer {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .footer-div-1 {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .footer-div-4 {
+  }
+  .footer-div-4 figure {
+    display: flex;
+    gap: 30px;
+    width: 50%;
+  }
+  .footer-div-4 img {
     width: 100%;
   }
 }
